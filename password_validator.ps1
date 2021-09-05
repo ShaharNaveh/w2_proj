@@ -20,4 +20,5 @@ if ( $PASS -notmatch '(?-i)[A-A]+' ) {
     exit 1
 }
 
+Write-Host "Strong password!" -ForegroundColor Green
 exit 0
