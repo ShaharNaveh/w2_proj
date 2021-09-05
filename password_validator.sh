@@ -7,3 +7,9 @@ then
     echo "Error: Password is less than 10 characters."
     exit 1
 fi
+
+if [[ ! $PASS =~ ^[[:alnum:]]*[[:alpha:]][[:alnum:]]*$ ]]
+then
+    echo "Error: Does not contain both numbers and letters"
+    exit 1
+fi
