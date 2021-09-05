@@ -29,7 +29,13 @@ cecho(){
 	echo -ne "${NORMAL}"
 }
 
-PASS=$1
+if [[ $1 == "-f" ]]
+then
+    # Reading from file
+    PASS=$(/bin/cat $2)
+else
+    PASS=$1
+fi
 
 if [ ${#PASS} -lt 10 ]
 then
