@@ -54,3 +54,6 @@ then
     echo "Error: Does not contain a lowercase letter" | cecho RED
     exit 1
 fi
+
+# Should be by default
+exit 0
