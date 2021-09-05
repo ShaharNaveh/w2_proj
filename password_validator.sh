@@ -13,3 +13,15 @@ then
     echo "Error: Does not contain both numbers and letters"
     exit 1
 fi
+
+if [[ ! $PASS == *[A-Z]* ]]
+then
+    echo "Error: Does not contain an uppercase letter"
+    exit 1
+fi
+
+if [[ ! $PASS == *[a-z]* ]]
+then
+    echo "Error: Does not contain a lowercase letter"
+    exit 1
+fi
